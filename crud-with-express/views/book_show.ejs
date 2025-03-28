@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Single Book</title>
+  <!-- JAVASCRIPT IMPORTS -->
+  <!-- STYLESHEETS IMPORTS -->
+</head>
+<body>
+  <h1>A SINGLE BOOK</h1>
+  <%= book.id %>
+  <p><%= book.author %></p>
+  <p><%= book.title %></p>
+  <p><%= book.year %></p>
+
+  <br />
+  <form method="POST" action="/books/<%= book.id%>">
+    <label for="year">Year</label>
+    <input type="text" name="year" id="year" />
+
+    <button type="submit">Update the book's year</button>
+  </form>
+
+</body>
+</html>
