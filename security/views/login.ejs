@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      color: #DDA853;
+      background-color: #183B4E;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Login Form</h2>
+  <h4>New here? Check out the <a href="/register">registration</a> page!</h4>
+
+  <form action="/login?_method=PATCH" method="POST">
+    <label>Email</label>
+    <input name="email" />
+    <br />
+    <label>Password</label>
+    <input name="password" />
+    <br />
+    <button type="submit">Login!</button>
+  </form>
+</body>
+
+</html>
