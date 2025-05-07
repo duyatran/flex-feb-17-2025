@@ -1,4 +1,4 @@
-# M0 - SQL from our Apps
+# M05W12 - SQL from our Apps
 
 ### To Do
 - [ ] Create a database
